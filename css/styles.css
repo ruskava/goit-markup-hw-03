@@ -1,0 +1,197 @@
+/* =====styles======*/
+:root {
+  --maim-color: #212121;
+  --alt-color: #2196f3;
+  --heder-color: #ffffff;
+  --description-color: #757575;
+  --background-hero: #2f303a;
+  --background-team: #f5f4fa;
+  --background-footer: #2f303a;
+  --link-footer: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--heder-color);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
+}
+address {
+  font-style: inherit;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/* ================Хедер===================== */
+
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--alt-color);
+}
+.curent-black {
+  color: var(--maim-color);
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--maim-color);
+}
+.curent-blue-link {
+  color: var(--alt-color);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  color: var(--alt-color);
+}
+.contact-link {
+  color: var(--description-color);
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--alt-color);
+}
+
+/* ============= Герой ВебСтудия =============*/
+.hero {
+  background: var(--background-hero);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--heder-color);
+}
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--heder-color);
+  background-color: var(--alt-color);
+  cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--description-color);
+}
+/* ============= Миссия компании==================*/
+
+.about-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--maim-color);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--maim-color);
+}
+.team {
+  background: var(--background-team);
+}
+
+.team-title,
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-title {
+  font-weight: 500;
+  color: var(--maim-color);
+}
+/*================ Футер========================*/
+
+.footer {
+  background: var(--background-footer);
+}
+.curent-white {
+  color: var(--heder-color);
+}
+.footer-adress {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--heder-color);
+}
+.link-footer {
+  color: var(--link-footer);
+}
+.footer-adress:hover,
+.footer-adress:hover {
+  color: var(--alt-color);
+}
+.link-footer:hover,
+.link-footer:focus {
+  color: var(--alt-color);
+}
+
+/*============ Портфолио==================*/
+.filter-btm,
+.btm-active {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  background: var(--heder-color);
+  color: var(--maim-color);
+  cursor: pointer;
+}
+
+.filter-btm:hover,
+.filter-btm:focus,
+.btm-active {
+  background: var(--alt-color);
+  color: var(--heder-color);
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--maim-color);
+}
+.portfolio-text {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
+}

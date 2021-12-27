@@ -10,6 +10,9 @@
   --link-footer: rgba(255, 255, 255, 0.6);
   --border-color: #eeeeee;
   --header-border: #ececec;
+  --box-shadow:rgba(0, 0, 0, 0.15);
+  --box-shadow-btm: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+---filter-btm:#F5F4FA;
 }
 
 body {
@@ -60,10 +63,7 @@ address {
   clip-path: inset(50%);
   margin: -1px;
 }
-.header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -108,6 +108,7 @@ address {
   margin-right: 50px;
 }
 
+
 .curent-black {
   color: var(--maim-color);
 }
@@ -117,6 +118,9 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--maim-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 .curent-blue-link {
   color: var(--alt-color);
@@ -166,11 +170,13 @@ address {
   color: var(--heder-color);
   background-color: var(--alt-color);
   cursor: pointer;
-  width: 200px;
-  height: 50px;
   left: 700px;
   top: 430px;
   margin-top: 35px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px var(--box-shadow);
+  padding: 10px 32px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -184,9 +190,13 @@ address {
 }
 .company-list {
   display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
 }
-.about-item:not(:last-child) {
-  margin-right: 30px;
+.about-item{
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .about-item-title {
@@ -198,13 +208,20 @@ address {
   margin-bottom: 10px;
 }
 
+.engaged {
+  padding-top: 0;
+}
 .engaged-list {
   display: flex;
   margin-left: -30px;
+  margin-top: -30px;
+  flex-wrap: wrap;
 }
 .engaged-item {
-  width: calc(100 % / 3 -30px);
+  width: calc(100% / 3 - 30px);
   margin-left: 30px;
+  margin-top: 30px;
+
 }
 
 .section-title {
@@ -223,7 +240,6 @@ address {
 .team-position {
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 .team-title {
   font-weight: 500;
@@ -232,18 +248,22 @@ address {
 }
 .team-position {
   margin-top: 10px;
-  padding-bottom: 30px;
 }
 .team-list {
   display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+  flex-wrap: wrap;
 }
-.team-item:not(:last-child) {
-  margin-right: 30px;
-}
-.team-item {
+.team-item{
+  width:calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
   border-radius: 0px 0px 4px 4px;
   background-color: var(--heder-color);
   border: 1px solid var(--border-color);
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 /*================ Футер========================*/
@@ -278,7 +298,9 @@ address {
 .link-footer:focus {
   color: var(--alt-color);
 }
-.footer-item {
+
+.footer-item:not(:last-child)
+{
   margin-bottom: 9px;
 }
 
@@ -293,6 +315,16 @@ address {
   background: var(--heder-color);
   color: var(--maim-color);
   cursor: pointer;
+  border: none;
+}
+
+.filter-btm{
+width: 145px;
+height: 38px;
+left: 712px;
+top: 174px;
+background:var(---filter-btm);
+border-radius: 4px;
 }
 
 .filter-btm:hover,
@@ -308,7 +340,6 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--maim-color);
-  margin-top: 20px;
   margin-bottom: 9px;
 }
 .portfolio-text {
@@ -318,30 +349,39 @@ address {
   letter-spacing: 0.03em;
   color: var(--description-color);
 }
-
 .btm-list {
   display: flex;
-  margin-left: -8px;
-  justify-content: center;
+justify-content: center;
   margin-bottom: 34px;
+  width: 100%;
 }
-.btm-item-filter {
-  width: calc (100 % / 5 -40px);
-  margin-left: 8px;
+.btm-item-filter:not(:last-child){
+  margin-right: 8px;
 }
-
+.btm-active{
+width: 73px;
+height: 38px;
+left: 495px;
+top: 174px;
+border-radius: 4px;
+}
+.btm-active:hover{
+box-shadow:var(--box-shadow-btm);
+}
 .portfolio-cards-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  margin-top: -30px;
+  margin-left: -30px;
+  
 }
 .portfolio-cards-item {
-  width: calc(100 % / 9 -30px);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  width: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .border {
   border: 1px solid var(--border-color);
-}
+  padding:20px 24px;
+  

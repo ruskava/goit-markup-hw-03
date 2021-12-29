@@ -133,7 +133,6 @@ address {
 }
 .contact-link {
   color: var(--description-color);
-  margin-left: 50px;
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -157,8 +156,6 @@ address {
   color: var(--heder-color);
   max-width: 696px;
   height: 120px;
-  left: 452px;
-  top: 280px;
   margin: 0 auto;
 }
 .hero-btn {
@@ -170,8 +167,6 @@ address {
   color: var(--heder-color);
   background-color: var(--alt-color);
   cursor: pointer;
-  left: 700px;
-  top: 430px;
   margin-top: 35px;
   border: none;
   border-radius: 4px;
@@ -190,6 +185,7 @@ address {
 }
 .company-list {
   display: flex;
+  flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -332,6 +328,7 @@ border-radius: 4px;
 .btm-active {
   background: var(--alt-color);
   color: var(--heder-color);
+  box-shadow:var(--box-shadow-btm);
 }
 
 .portfolio-title {
@@ -365,9 +362,7 @@ left: 495px;
 top: 174px;
 border-radius: 4px;
 }
-.btm-active:hover{
-box-shadow:var(--box-shadow-btm);
-}
+
 .portfolio-cards-list {
   display: flex;
   flex-wrap: wrap;
